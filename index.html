@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ayush Shrestha</title>
+    <link rel="shortcut icon" href="imgs/logo.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+
+  <body data-bs-theme="light">
+    <button
+      type="button"
+      class="btn btn-primary btn-floating btn-lg"
+      id="btn-back-to-top"
+    >
+      <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Navigation -->
+    <nav id="main-navbar" class="navbar navbar-expand-lg fixed-top bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#"> Ayush Shrestha </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <span class="form-check form-switch pt-2 justify-content-end">
+          <input
+            class="form-check-input p-1"
+            type="checkbox"
+            role="switch"
+            id="flexSwitchCheckChecked"
+            checked
+            onclick="myFunction()"
+          />
+          Dark Mode
+        </span>
+      </div>
+    </nav>
+    <!-- Home -->
+    <section id="about" class="">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-10 mx-auto">
+            <h1 class="fw-bold mb-4">Hey 👋 I'm Ayush</h1>
+            <p class="lead mb-4">
+              I'm an aspiring professional eager to contribute to projects,
+              apply programming expertise, and gain hands-on experience in data
+              analysis, machine learning, software development, and data
+              visualization.
+            </p>
+            <div>
+              <a href="#contact" class="btn btn-outline-primary">
+                <i class="bi bi-envelope-fill me-1"></i> Contact Me
+              </a>
+              <a
+                href="https://bit.ly/4aFBoVn"
+                class="btn btn-outline-success"
+                target="_blank"
+              >
+                <i class="bi bi-file-earmark-fill me-1"></i> Download CV
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="">
+      <div class="container">
+        <h2 class="fw-bold mb-4">Experience</h2>
+        <div class="card mb-4">
+          <div class="row">
+            <div class="col-md-2 pt-4">
+              <img
+                src="imgs/devplat.png"
+                class="img-fluid rounded-start"
+                alt="Development Platform HCK"
+              />
+            </div>
+            <div class="col-md-10">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-6">
+                    <h5 class="card-title mb-0 fw-bold">Back End Developer</h5>
+                    <p class="mb-0 lead">Development Platform HCK</p>
+                  </div>
+                  <div class="col-md-6 text-end">
+                    <p class="mb-0">Jan 2022 - Dec 2022</p>
+                    <p class="text-muted mb-1">Naxal, Kathmandu</p>
+                  </div>
+                  <ul>
+                    <li>
+                      Proficient in Node.js, JavaScript, Express.js, and MongoDB
+                      for building scalable and robust back-end solutions.
+                    </li>
+                    <li>
+                      Developed and maintained APIs, ensuring clear and
+                      standardized documentation using Swagger API.
+                    </li>
+                    <li>
+                      Collaborated with cross-functional teams, conducted code
+                      reviews, and actively contributed to troubleshooting and
+                      optimizing system performance.
+                    </li>
+                    <li>
+                      Successfully delivered projects within specified timelines
+                      and contributed to the overall success of the Development
+                      Platform HCK.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="">
+      <div class="container">
+        <h1 class="fw-bold mb-4">Skills</h1>
+
+        <!-- Front End & Back End Accordions -->
+        <div class="row mb-2">
+          <div class="col-md-6">
+            <!-- Front End Accordion -->
+            <div class="accordion" id="frontEndAccordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="frontEndHeading">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#frontEndCollapse"
+                    aria-expanded="true"
+                    aria-controls="frontEndCollapse"
+                  >
+                    <i class="bi bi-laptop"></i> Front End
+                  </button>
+                </h2>
+                <div
+                  id="frontEndCollapse"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="frontEndHeading"
+                  data-bs-parent="#frontEndAccordion"
+                >
+                  <div class="accordion-body">
+                    <img src="imgs/flutter.png" alt="Flutter" />Flutter<br />
+                    <img src="imgs/reactjs.png" alt="ReactJS" /> ReactJS<br />
+                    <img src="imgs/tailwindcss.png" alt="Tailwind CSS" />
+                    Tailwind CSS<br />
+                    <img src="imgs/bootstrap.png" alt="bootstrap" />
+                    Bootstrap<br />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <!-- UI/UX Accordion -->
+            <div class="accordion" id="uiUxAccordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="uiUxHeading">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#uiUxCollapse"
+                    aria-expanded="true"
+                    aria-controls="uiUxCollapse"
+                  >
+                    <i class="bi bi-palette"></i> UI/UX
+                  </button>
+                </h2>
+                <div
+                  id="uiUxCollapse"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="uiUxHeading"
+                  data-bs-parent="#uiUxAccordion"
+                >
+                  <div class="accordion-body">
+                    <img src="imgs/photoshop.png" alt="Adobe Photoshop" />Adobe
+                    Photoshop<br />
+                    <img src="imgs/figma.png" alt="Figma" /> Figma<br />
+                    <img src="imgs/canva.png" alt="Canva" /> Canva<br />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- UI/UX & Database Accordions -->
+        <div class="row">
+          <div class="col-md-6">
+            <!-- Back End Accordion -->
+            <div class="accordion" id="backEndAccordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="backEndHeading">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#backEndCollapse"
+                    aria-expanded="true"
+                    aria-controls="backEndCollapse"
+                  >
+                    <i class="bi bi-server"></i> Back End
+                  </button>
+                </h2>
+                <div
+                  id="backEndCollapse"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="backEndHeading"
+                  data-bs-parent="#backEndAccordion"
+                >
+                  <div class="accordion-body">
+                    <img src="imgs/nodejs.png" alt="NodeJS" /> NodeJS<br />
+                    <img src="imgs/firebase.png" alt="Firebase" />
+                    Firebase<br />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <!-- Database Accordion -->
+            <div class="accordion" id="databaseAccordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="databaseHeading">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#databaseCollapse"
+                    aria-expanded="true"
+                    aria-controls="databaseCollapse"
+                  >
+                    <i class="bi bi-database"></i> Database
+                  </button>
+                </h2>
+                <div
+                  id="databaseCollapse"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="databaseHeading"
+                  data-bs-parent="#databaseAccordion"
+                >
+                  <div class="accordion-body">
+                    <img src="imgs/mongodb.png" alt="MongoDB" /> MongoDB<br />
+                    <img src="imgs/mysql.png" alt="MySQL" /> MySQL<br />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Section -->
+    <section id="projects" class="">
+      <div class="container">
+        <h1 class="fw-bold mb-4">Projects</h1>
+        <h1 class="text-center">Coming soon!</h1>
+      </div>
+    </section>
+
+    <section id="contact" class="">
+      <div class="container">
+        <h1 class="fw-bold mb-2">Contact</h1>
+        <div class="row justify-content-center">
+          <div class="col-md-6 text-center">
+            <p class="mb-4">
+              Feel free to reach out to me via email or social media.
+            </p>
+
+            <a href="mailto:shresthayush90@gmail.com" class="btn btn-primary">
+              <i class="bi bi-envelope-fill me-2"></i>Email
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/shresthayush/"
+              target="_blank"
+              class="btn btn-primary"
+            >
+              <i class="bi bi-linkedin me-2"></i>LinkedIn
+            </a>
+
+            <a
+              href="https://github.com/ayush-shrestha1"
+              target="_blank"
+              class="btn btn-primary"
+            >
+              <i class="bi bi-github me-2"></i>Github
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr />
+    <!-- Footer -->
+    <footer class="text-center">
+      <div class="container">
+        <p>&copy; 2024 Ayush Shrestha, Nepal🇳🇵</p>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
