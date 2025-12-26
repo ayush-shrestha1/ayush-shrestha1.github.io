@@ -1,16 +1,78 @@
-*{
-    font-family: "Poppins", sans-serif;
-}
-section{
-    margin: 0 4rem;
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f3f4f6; /* gray-100 */
+  color: #1d1d1f;
 }
 
-@media(min-width:1080px){
-    .text {
-        max-width: 70%;
-    }
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
 
-    .contact{
-        max-width: 50%;
-    }
+/* Gradient Animation Helper Classes */
+.animate-gradient-bg {
+  background-size: 300% 300%;
+  animation: gradient-xy 12s ease-in-out infinite;
+}
+.animate-gradient-slow-bg {
+  background-size: 300% 300%;
+  animation: gradient-xy 18s ease-in-out infinite;
+}
+
+/* Keyframes for Gradient Movement */
+@keyframes gradient-xy {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Wave Animation */
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.animate-wave {
+  animation-name: wave;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
 }

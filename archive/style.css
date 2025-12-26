@@ -1,0 +1,16 @@
+*{
+    font-family: "Poppins", sans-serif;
+}
+section{
+    margin: 0 4rem;
+}
+
+@media(min-width:1080px){
+    .text {
+        max-width: 70%;
+    }
+
+    .contact{
+        max-width: 50%;
+    }
+}
